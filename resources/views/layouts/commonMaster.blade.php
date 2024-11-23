@@ -40,7 +40,8 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   @yield('layoutContent')
   <!--/ Layout Content -->
 
-  
+  {{-- remove while creating package --}}
+  {{-- remove while creating package end --}}
 
   <!-- Include Scripts -->
   <!-- $isFront is used to append the front layout scripts only on the front layout otherwise the variable will be blank -->

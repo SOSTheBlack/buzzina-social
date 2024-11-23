@@ -5,7 +5,7 @@ return [
   "creatorUrl" => "https://pixinvent.com",
   "templateName" => "Materialize",
   "templateSuffix" => "Materialize - Bootstrap 5 HTML Laravel Admin Template",
-  "templateVersion" => "2.0.1",
+  "templateVersion" => "2.0.0",
   "templateFree" => false,
   "templateDescription" => "Materialize – is the most developer friendly & highly customizable Admin Dashboard Template.",
   "templateKeyword" => "dashboard, material, material design, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5",

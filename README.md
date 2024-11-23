@@ -13,21 +13,29 @@
 Passos para instalar o BuzzinaSocial em seu sistema🧑‍💻
 
 ```shell
+cp .env.example .env
+
+
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd):/var/www/html" \
+    -w /var/www/html \
+    laravelsail/php84-composer:latest \
+    composer install --ignore-platform-reqs
 
 #Criar alias
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
 
-cp .env.example .env
-
 docker compose down -v
  
 sail build --no-cache
  
-sail up
+sail up --no-cache
 
 sail artisan key:generate
 
+sail yarn
 
 
 ```
