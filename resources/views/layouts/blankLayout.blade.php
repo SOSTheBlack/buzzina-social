@@ -1,11 +1,11 @@
 @isset($pageConfigs)
-{!! Helper::updatePageConfig($pageConfigs) !!}
+    {!! MaterializeTemplate::updatePageConfig($pageConfigs) !!}
 @endisset
 @php
-$configData = Helper::appClasses();
+    $configData = MaterializeTemplate::appClasses();
 
-/* Display elements */
-$customizerHidden = ($customizerHidden ?? '');
+    /* Display elements */
+    $customizerHidden = ($customizerHidden ?? '');
 
 @endphp
 
@@ -13,8 +13,8 @@ $customizerHidden = ($customizerHidden ?? '');
 
 @section('layoutContent')
 
-<!-- Content -->
-@yield('content')
-<!--/ Content -->
+    <!-- Content -->
+    @yield('content')
+    <!--/ Content -->
 
 @endsection

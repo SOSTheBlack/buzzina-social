@@ -5,7 +5,7 @@ namespace App\Helpers;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Str;
 
-class Helpers
+class MaterializeTemplate
 {
   public static function appClasses()
   {
