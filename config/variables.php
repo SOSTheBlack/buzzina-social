@@ -2,7 +2,7 @@
 // Variables
 return [
   "creatorName" => "Garcia Softwares",
-  "creatorUrl" => "https://buzzinasocial.com.br",
+  "creatorUrl" => "https://github.com/SOSTheBlack",
   "templateName" => "Buzzina Social",
   "templateSuffix" => "Fazendo barulho nas redes sociais",
   "templateVersion" => "v0.0.1",
