@@ -89,11 +89,7 @@ $navbarDetached = ($navbarDetached ?? '');
                   </div>
                   <div class="flex-grow-1">
                     <span class="fw-medium d-block small">
-                      @if (Auth::check())
                         {{ Auth::user()->name }}
-                      @else
-                        John Doe
-                      @endif
                     </span>
                     <small class="text-muted">Admin</small>
                   </div>
@@ -105,13 +101,13 @@ $navbarDetached = ($navbarDetached ?? '');
             </li>
             <li>
               <a class="dropdown-item" href="{{ Route::has('profile.show') ? route('profile.show') : 'javascript:void(0);' }}">
-                <i class="ri-user-3-line ri-22px me-3"></i><span class="align-middle">My Profile</span>
+                <i class="ri-user-3-line ri-22px me-3"></i><span class="align-middle">Meu Perfil</span>
               </a>
             </li>
             @if (Auth::check() && Laravel\Jetstream\Jetstream::hasApiFeatures())
               <li>
                 <a class="dropdown-item" href="{{ route('api-tokens.index') }}">
-                  <i class="ri-key-2-line ri-22px me-3"></i><span class="align-middle">API Tokens</span>
+                  <i class="ri-key-2-line ri-22px me-3"></i><span class="align-middle">API</span>
                 </a>
               </li>
             @endif
@@ -119,7 +115,7 @@ $navbarDetached = ($navbarDetached ?? '');
               <a class="dropdown-item" href="javascript:void(0);">
                 <span class="d-flex align-items-center align-middle">
                   <i class="flex-shrink-0 ri-file-text-line ri-22px me-3"></i>
-                  <span class="flex-grow-1 align-middle">Billing</span>
+                  <span class="flex-grow-1 align-middle">Finanças</span>
                 </span>
               </a>
             </li>
@@ -129,20 +125,20 @@ $navbarDetached = ($navbarDetached ?? '');
                 <div class="dropdown-divider"></div>
               </li>
               <li>
-                <h6 class="dropdown-header">Manage Team</h6>
+                <h6 class="dropdown-header">Gerenciar equipe</h6>
               </li>
               <li>
                 <div class="dropdown-divider"></div>
               </li>
               <li>
                 <a class="dropdown-item" href="{{ Auth::user() ? route('teams.show', Auth::user()->currentTeam->id) : 'javascript:void(0)' }}">
-                  <i class="ri-settings-3-line ri-22px me-3"></i><span class="align-middle">Team Settings</span>
+                  <i class="ri-settings-3-line ri-22px me-3"></i><span class="align-middle">Configurações da equipe</span>
                 </a>
               </li>
               @can('create', Laravel\Jetstream\Jetstream::newTeamModel())
                 <li>
                   <a class="dropdown-item" href="{{ route('teams.create') }}">
-                    <i class="ri-group-line ri-22px me-3"></i><span class="align-middle">Create New Team</span>
+                    <i class="ri-group-line ri-22px me-3"></i><span class="align-middle">Criar nova equipe</span>
                   </a>
                 </li>
               @endcan
@@ -151,7 +147,7 @@ $navbarDetached = ($navbarDetached ?? '');
                   <div class="dropdown-divider"></div>
                 </li>
                 <li>
-                  <h6 class="dropdown-header">Switch Teams</h6>
+                  <h6 class="dropdown-header">Trocar de equipe</h6>
                 </li>
                 <li>
                   <div class="dropdown-divider"></div>
@@ -173,7 +169,7 @@ $navbarDetached = ($navbarDetached ?? '');
               <li>
                 <div class="d-grid px-4 pt-2 pb-1">
                   <a class="btn btn-sm btn-danger d-flex" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                    <small class="align-middle">Logout</small>
+                    <small class="align-middle">Sair</small>
                     <i class="ri-logout-box-r-line ms-2 ri-16px"></i>
                   </a>
                 </div>

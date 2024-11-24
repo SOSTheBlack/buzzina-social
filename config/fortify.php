@@ -73,7 +73,7 @@ return [
     |
     */
 
-    'home' => '/',
+    'home' => 'dashboard',
 
     /*
     |--------------------------------------------------------------------------
@@ -86,7 +86,7 @@ return [
     |
     */
 
-    'prefix' => 'auth',
+    'prefix' => 'dashboard/auth',
 
     'domain' => null,
 
