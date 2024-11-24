@@ -39,15 +39,15 @@
             <!-- Register -->
             <div class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg position-relative py-sm-12 px-12 py-6">
                 <div class="w-px-400 mx-auto pt-5 pt-lg-0">
-                    <h4 class="mb-1">Adventure starts here 🚀</h4>
-                    <p class="mb-5">Make your app management easy and fun!</p>
+                    <h4 class="mb-1">A aventura começa aqui 🚀</h4>
+                    <p class="mb-5">Torne o engajamento fácil e divertido!</p>
 
                     <form id="formAuthentication" class="mb-5" action="{{ route('register') }}" method="POST">
                         @csrf
                         <div class="form-floating form-floating-outline mb-5">
                             <input type="text" class="form-control @error('name') is-invalid @enderror" id="username"
                                    name="name" placeholder="johndoe" autofocus value="{{ old('name') }}">
-                            <label for="username">Username</label>
+                            <label for="username">Usuário</label>
                             @error('name')
                             <span class="invalid-feedback" role="alert">
                 <span class="fw-medium">{{ $message }}</span>
@@ -57,7 +57,7 @@
                         <div class="form-floating form-floating-outline mb-5">
                             <input type="text" class="form-control @error('email') is-invalid @enderror" id="email"
                                    name="email" placeholder="john@example.com" value="{{ old('email') }}">
-                            <label for="email">Email</label>
+                            <label for="email">E-mail</label>
                             @error('email')
                             <span class="invalid-feedback" role="alert">
                 <span class="fw-medium">{{ $message }}</span>
@@ -71,7 +71,7 @@
                                            class="form-control @error('password') is-invalid @enderror" name="password"
                                            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                                            aria-describedby="password" />
-                                    <label for="password">Password</label>
+                                    <label for="password">Senha</label>
                                 </div>
                                 <span class="input-group-text cursor-pointer"><i class="ri-eye-off-line"></i></span>
                             </div>
@@ -88,7 +88,7 @@
                                            name="password_confirmation"
                                            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                                            aria-describedby="password" />
-                                    <label for="password-confirm">Confirm Password</label>
+                                    <label for="password-confirm">Confirmar Senha</label>
                                 </div>
                                 <span class="input-group-text cursor-pointer"><i class="ri-eye-off-line"></i></span>
                             </div>
@@ -99,9 +99,9 @@
                                     <input class="form-check-input @error('terms') is-invalid @enderror" type="checkbox"
                                            id="terms" name="terms" />
                                     <label class="form-check-label" for="terms">
-                                        I agree to
-                                        <a href="{{ route('policy.show') }}" target="_blank">privacy policy</a> &
-                                        <a href="{{ route('terms.show') }}" target="_blank">terms</a>
+                                      Eu concordo com
+                                        <a href="{{ route('policy.show') }}" target="_blank">política de privacidade</a> &
+                                        <a href="{{ route('terms.show') }}" target="_blank">termos e condições</a>
                                     </label>
                                 </div>
                                 @error('terms')
@@ -111,20 +111,20 @@
                                 @enderror
                             </div>
                         @endif
-                        <button type="submit" class="btn btn-primary d-grid w-100">Sign up</button>
+                        <button type="submit" class="btn btn-primary d-grid w-100">Cadastrar-se</button>
                     </form>
 
                     <p class="text-center">
-                        <span>Already have an account?</span>
+                        <span>Já tem uma conta?</span>
                         @if (Route::has('login'))
                             <a href="{{ route('login') }}">
-                                <span>Sign in instead</span>
+                                <span>Entre aqui</span>
                             </a>
                         @endif
                     </p>
 
                     <div class="divider my-5">
-                        <div class="divider-text">or</div>
+                        <div class="divider-text">ou</div>
                     </div>
 
                     <div class="d-flex justify-content-center gap-2">

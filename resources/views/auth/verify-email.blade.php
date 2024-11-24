@@ -40,30 +40,30 @@
             <!--  Verify email -->
             <div class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg position-relative py-sm-12 px-12 py-6">
                 <div class="w-px-400 mx-auto pt-5 pt-lg-0">
-                    <h4 class="mb-1">Verify your email ✉️</h4>
+                    <h4 class="mb-1">Verifique seu e-mail ✉️</h4>
 
                     @if (session('status') == 'verification-link-sent')
                         <div class="alert alert-success" role="alert">
                             <div class="alert-body">
-                                A new verification link has been sent to the email address you provided during
-                                registration.
+                              Um novo link de verificação foi enviado para o endereço de e-mail que você forneceu durante
+                              o registro.
                             </div>
                         </div>
                     @endif
                     <p class="text-start mb-0">
-                        Account activation link sent to your email address: <span
-                                class="h6">{{Auth::user()->email}}</span> Please follow the link inside to continue.
+                      Link de ativação da conta enviado para seu endereço de e-mail: <span
+                                class="h6">{{Auth::user()->email}}</span> Siga o link interno para continuar.
                     </p>
                     <div class="mt-5 d-flex flex-column gap-2">
                         <form method="POST" action="{{ route('verification.send') }}">
                             @csrf
-                            <button type="submit" class="w-100 btn btn-label-secondary">click here to request another
+                            <button type="submit" class="w-100 btn btn-label-secondary">clique aqui para solicitar outro
                             </button>
                         </form>
 
                         <form method="POST" action="{{route('logout')}}">
                             @csrf
-                            <button type="submit" class="w-100 btn btn-danger">Log Out</button>
+                            <button type="submit" class="w-100 btn btn-danger">Sair</button>
                         </form>
                     </div>
                 </div>

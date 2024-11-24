@@ -38,8 +38,8 @@
       <div
         class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg position-relative py-sm-12 px-12 py-6">
         <div class="w-px-400 mx-auto pt-5 pt-lg-0">
-          <h4 class="mb-1">Welcome to {{config('variables.templateName')}}! 👋</h4>
-          <p class="mb-5">Please sign-in to your account and start the adventure</p>
+          <h4 class="mb-1">Bem-vindo ao {{config('variables.templateName')}}! 👋</h4>
+          <p class="mb-5">Por favor, faça login na sua conta e comece a aventura</p>
 
           @if (session('status'))
             <div class="alert alert-success mb-3" role="alert">
@@ -52,8 +52,8 @@
             @csrf
             <div class="form-floating form-floating-outline mb-5">
               <input type="text" class="form-control @error('email') is-invalid @enderror" id="login-email" name="email"
-                     placeholder="john@example.com" autofocus value="{{ old('email') }}">
-              <label for="login-email">Email</label>
+                     placeholder="jean@example.com" autofocus value="{{ old('email') }}">
+              <label for="login-email">E-mail</label>
               @error('email')
               <span class="invalid-feedback" role="alert">
                 <span class="fw-medium">{{ $message }}</span>
@@ -68,7 +68,7 @@
                            class="form-control @error('password') is-invalid @enderror" name="password"
                            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                            aria-describedby="password" />
-                    <label for="login-password">Password</label>
+                    <label for="login-password">Senha</label>
                   </div>
                   <span class="input-group-text cursor-pointer"><i class="ri-eye-off-line"></i></span>
                 </div>
@@ -83,47 +83,47 @@
               <div class="form-check mt-2">
                 <input class="form-check-input" type="checkbox" id="remember-me">
                 <label class="form-check-label" for="remember-me">
-                  Remember Me
+                  Manter-me conectado
                 </label>
               </div>
               @if (Route::has('password.request'))
                 <a href="{{ route('password.request') }}" class="float-end mb-1 mt-2">
-                  <span>Forgot Password?</span>
+                  <span>Perdeu sua senha?</span>
                 </a>
               @endif
             </div>
             <button class="btn btn-primary d-grid w-100">
-              Sign in
+              Entrar
             </button>
           </form>
 
           <p class="text-center">
-            <span>New on our platform?</span>
+            <span>Novo na plataforma?</span>
             @if (Route::has('register'))
               <a href="{{ route('register') }}">
-                <span>Create an account</span>
+                <span>Crie sua conta</span>
               </a>
             @endif
           </p>
 
           <div class="divider my-5">
-            <div class="divider-text">or</div>
+            <div class="divider-text">Ou</div>
           </div>
 
           <div class="d-flex justify-content-center gap-2">
-            <a href="javascript:;" class="btn btn-icon rounded-circle btn-text-facebook">
+            <a href="javascript:" class="btn btn-icon rounded-circle btn-text-facebook">
               <i class="tf-icons ri-facebook-fill"></i>
             </a>
 
-            <a href="javascript:;" class="btn btn-icon rounded-circle btn-text-twitter">
+            <a href="javascript:" class="btn btn-icon rounded-circle btn-text-twitter">
               <i class="tf-icons ri-twitter-fill"></i>
             </a>
 
-            <a href="javascript:;" class="btn btn-icon rounded-circle btn-text-github">
+            <a href="javascript:" class="btn btn-icon rounded-circle btn-text-github">
               <i class="tf-icons ri-github-fill"></i>
             </a>
 
-            <a href="javascript:;" class="btn btn-icon rounded-circle btn-text-google-plus">
+            <a href="javascript:" class="btn btn-icon rounded-circle btn-text-google-plus">
               <i class="tf-icons ri-google-fill"></i>
             </a>
           </div>

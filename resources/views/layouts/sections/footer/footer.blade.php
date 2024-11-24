@@ -14,6 +14,10 @@
         <a href="{{ (!empty(config('variables.creatorUrl')) ? config('variables.creatorUrl') : '') }}" target="_blank"
            class="footer-link">{{ (!empty(config('variables.creatorName')) ? config('variables.creatorName') : '') }}</a>
       </div>
+
+      <div class="d-none d-lg-inline-block">
+        <span class="footer-link me-4" target="_blank">{{ config('variables.templateVersion') }}</span>
+      </div>
     </div>
   </div>
 </footer>

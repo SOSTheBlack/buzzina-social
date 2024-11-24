@@ -80,10 +80,10 @@
         <a href="{{config('variables.creatorUrl')}}" target="_blank" class="footer-link fw-medium footer-theme-link">{{config('variables.creatorName')}}</a>
       </div>
       <div>
-        <a href="{{config('variables.githubUrl')}}" class="footer-link me-4" target="_blank"><i class="ri-github-fill"></i></a>
-        <a href="{{config('variables.facebookUrl')}}" class="footer-link me-4" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
-        <a href="{{config('variables.twitterUrl')}}" class="footer-link me-4" target="_blank"><i class="ri-twitter-fill"></i></a>
-        <a href="{{config('variables.instagramUrl')}}" class="footer-link" target="_blank"><i class='ri-instagram-line'></i></a>
+        <a href="#" class="footer-link me-4" target="_blank"><i class="ri-github-fill"></i></a>
+        <a href="#" class="footer-link me-4" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+        <a href="#" class="footer-link me-4" target="_blank"><i class="ri-twitter-fill"></i></a>
+        <a href="#" class="footer-link" target="_blank"><i class='ri-instagram-line'></i></a>
       </div>
     </div>
   </div>

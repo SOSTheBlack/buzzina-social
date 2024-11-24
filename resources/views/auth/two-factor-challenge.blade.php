@@ -40,15 +40,15 @@
             <div class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg position-relative py-sm-12 px-12 py-6">
                 <div class="w-px-400 mx-auto pt-5 pt-lg-0">
 
-                    <h4 class="mb-1">Two Step Verification 💬</h4>
+                    <h4 class="mb-1">Verificação em duas etapas 💬</h4>
                     <div x-data="{ recovery: false }">
                         <div class="mb-6" x-show="! recovery">
-                            Please confirm access to your account by entering the authentication code provided by your
-                            authenticator application.
+                          Por favor, confirme o acesso à sua conta inserindo o código de autenticação fornecido pelo seu
+                          aplicativo autenticador.
                         </div>
 
                         <div class="mb-6" x-show="recovery">
-                            Please confirm access to your account by entering one of your emergency recovery codes.
+                          Confirme o acesso à sua conta inserindo um dos seus códigos de recuperação de emergência.
                         </div>
 
                         <x-validation-errors class="mb-1" />
@@ -71,14 +71,14 @@
                             <div class="d-flex justify-content-end gap-2">
                                 <div x-show="! recovery"
                                      x-on:click="recovery = true; $nextTick(() => { $refs.recovery_code.focus()})">
-                                    <button type="button" class="btn btn-outline-secondary">Use a recovery code</button>
+                                    <button type="button" class="btn btn-outline-secondary">Use um código de recuperação</button>
                                 </div>
                                 <div x-cloak x-show="recovery"
                                      x-on:click="recovery = false; $nextTick(() => { $refs.code.focus() })">
-                                    <button type="button" class="btn btn-outline-secondary">Use an authentication code
+                                    <button type="button" class="btn btn-outline-secondary">Use um código de autenticação
                                     </button>
                                 </div>
-                                <x-button class="px-3">Log in</x-button>
+                                <x-button class="px-3">Conecte-se</x-button>
                             </div>
                         </form>
                     </div>

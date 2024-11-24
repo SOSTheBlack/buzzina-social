@@ -20,7 +20,7 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <!-- laravel CRUD token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Canonical SEO -->
-  <link rel="canonical" href="{{ config('variables.productPage') ? config('variables.productPage') : '' }}">
+{{--  <link rel="canonical" href="{{ config('variables.productPage') ? config('variables.productPage') : '' }}">--}}
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon/favicon.ico') }}" />
 
