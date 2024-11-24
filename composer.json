@@ -37,7 +37,7 @@
       "Tests\\": "tests/"
     },
     "files": [
-      "app/Helpers/Helpers.php"
+      "app/Helpers/MaterializeTemplate.php"
     ]
   },
   "scripts": {
