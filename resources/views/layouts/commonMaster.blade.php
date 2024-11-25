@@ -13,10 +13,10 @@ $contentLayout = (isset($container) ? (($container === 'container-xxl') ? "layou
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
   <title>@yield('title') |
-    {{ config('variables.templateName') ? config('variables.templateName') : 'TemplateName' }} -
-    {{ config('variables.templateSuffix') ? config('variables.templateSuffix') : 'TemplateSuffix' }}</title>
-  <meta name="description" content="{{ config('variables.templateDescription') ? config('variables.templateDescription') : '' }}" />
-  <meta name="keywords" content="{{ config('variables.templateKeyword') ? config('variables.templateKeyword') : '' }}">
+    {{ config('app.name') ? config('app.name') : 'TemplateName' }} -
+    {{ config('app.slogan') ? config('app.slogan') : 'TemplateSuffix' }}</title>
+  <meta name="description" content="{{ config('app.description') ? config('app.description') : '' }}" />
+  <meta name="keywords" content="{{ config('app.keywords') ? config('app.keywords') : '' }}">
   <!-- laravel CRUD token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Canonical SEO -->

@@ -19,7 +19,7 @@ $navbarDetached = ($navbarDetached ?? '');
       <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-6">
         <a href="{{url('/')}}" class="app-brand-link gap-2">
           <span class="app-brand-logo demo">@include('_partials.macros',["width"=>25,"withbg"=>'var(--bs-primary)'])</span>
-          <span class="app-brand-text demo menu-text fw-semibold">{{config('variables.templateName')}}</span>
+          <span class="app-brand-text demo menu-text fw-semibold">{{config('app.name')}}</span>
         </a>
         @if(isset($menuHorizontal))
           <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">

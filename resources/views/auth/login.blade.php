@@ -18,7 +18,7 @@
     <!-- Logo -->
     <a href="{{url('/')}}" class="auth-cover-brand d-flex align-items-center gap-2">
       <span class="app-brand-logo demo">@include('_partials.macros',["width"=>25,"withbg"=>'var(--bs-primary)'])</span>
-      <span class="app-brand-text demo text-heading fw-semibold">{{config('variables.templateName')}}</span>
+      <span class="app-brand-text demo text-heading fw-semibold">{{config('app.name')}}</span>
     </a>
     <!-- /Logo -->
     <div class="authentication-inner row m-0">
@@ -38,7 +38,7 @@
       <div
         class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg position-relative py-sm-12 px-12 py-6">
         <div class="w-px-400 mx-auto pt-5 pt-lg-0">
-          <h4 class="mb-1">Bem-vindo ao {{config('variables.templateName')}}! 👋</h4>
+          <h4 class="mb-1">Bem-vindo ao {{config('app.name')}}! 👋</h4>
           <p class="mb-5">Por favor, faça login na sua conta e comece a aventura</p>
 
           @if (session('status'))

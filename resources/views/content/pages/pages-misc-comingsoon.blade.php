@@ -16,7 +16,7 @@
   <!-- We are Coming soon -->
   <div class="misc-wrapper">
     <h4 class="mb-2 mx-2">{{ config('app.name') }} será lançando em breve 🚀</h4>
-    <h5 class="mb-6 mx-2">...::: {{ config('variables.templateSuffix') }} :::...</h5>
+    <h5 class="mb-6 mx-2">...::: {{ config('app.slogan') }} :::...</h5>
     <p class="mb-6 mx-2">Estamos criando algo incrível. Por favor, inscreva-se para ser notificado quando estiver pronto!</p>
     <form method="GET" action="{{ url()->route('dashboard.home') }}">
       <div class="mb-0 d-flex gap-4 align-items-center">

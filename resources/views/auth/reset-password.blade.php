@@ -20,7 +20,7 @@
       <a href="{{url('/')}}" class="auth-cover-brand d-flex align-items-center gap-2">
         <span
           class="app-brand-logo demo">@include('_partials.macros',["width"=>25,"withbg"=>'var(--bs-primary)'])</span>
-        <span class="app-brand-text demo text-heading fw-semibold">{{config('variables.templateName')}}</span>
+        <span class="app-brand-text demo text-heading fw-semibold">{{config('app.name')}}</span>
       </a>
       <!-- /Logo -->
       <div class="authentication-inner row m-0">

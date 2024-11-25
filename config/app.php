@@ -15,6 +15,20 @@ return [
 
   'name' => env('APP_NAME', 'Laravel'),
 
+  'version' => env('APP_VERSION', 'beta' ),
+
+  'slogan' => env('APP_SLOGAN', 'Fazendo barulho nas redes sociais'),
+
+  'description' => env('APP_DESCRIPTION', 'Engajamento automátizado para suas redes sociais'),
+
+  'keywords' => env('APP_KEYWORDS', 'redes sociais, engajamento, network'),
+
+  'company' => [
+      'name' => env('APP_COMPANY_NAME', 'Garcia Softwares'),
+
+      'url' => env('APP_COMPANY_URL', 'https://github.com/SOSTheBlack'),
+  ],
+
   /*
   |--------------------------------------------------------------------------
   | Application Environment

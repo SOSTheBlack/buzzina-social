@@ -7,7 +7,7 @@
         <div class="col-lg-5">
           <a href="javascript:;" class="app-brand-link mb-6">
             <span class="app-brand-logo demo me-2">@include('_partials.macros',["width"=>25,"withbg"=>'var(--bs-primary)'])</span>
-            <span class="app-brand-text demo footer-link fw-semibold ms-1">{{ config('variables.templateName') }}</span>
+            <span class="app-brand-text demo footer-link fw-semibold ms-1">{{ config('app.name') }}</span>
           </a>
           <p class="footer-text footer-logo-description mb-6">
             Most Powerful & Comprehensive 🤩 React NextJS Admin Template with Elegant Material Design & Unique
@@ -77,7 +77,7 @@
         <span class="footer-text">©
           <script>document.write(new Date().getFullYear());</script>, Made with <i class="tf-icons ri-heart-fill text-danger"></i> by
         </span>
-        <a href="{{config('variables.creatorUrl')}}" target="_blank" class="footer-link fw-medium footer-theme-link">{{config('variables.creatorName')}}</a>
+        <a href="{{config('app.company.url')}}" target="_blank" class="footer-link fw-medium footer-theme-link">{{config('app.company.name')}}</a>
       </div>
       <div>
         <a href="#" class="footer-link me-4" target="_blank"><i class="ri-github-fill"></i></a>

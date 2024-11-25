@@ -11,12 +11,12 @@
         <script>document.write(new Date().getFullYear());</script>
         ,
         feito com <span class="text-danger"><i class="tf-icons ri-heart-fill"></i></span> por
-        <a href="{{ (!empty(config('variables.creatorUrl')) ? config('variables.creatorUrl') : '') }}" target="_blank"
-           class="footer-link">{{ (!empty(config('variables.creatorName')) ? config('variables.creatorName') : '') }}</a>
+        <a href="{{ (!empty(config('app.company.url')) ? config('app.company.url') : '') }}" target="_blank"
+           class="footer-link">{{ (!empty(config('app.company.name')) ? config('app.company.name') : '') }}</a>
       </div>
 
       <div class="d-none d-lg-inline-block">
-        <span class="footer-link me-4" target="_blank">{{ config('variables.templateVersion') }}</span>
+        <span class="footer-link me-4" target="_blank">{{ config('app.version') }}</span>
       </div>
     </div>
   </div>
