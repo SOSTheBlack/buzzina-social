@@ -1,7 +1,13 @@
-import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
-import html from '@rollup/plugin-html';
-import { glob } from 'glob';
+import {
+    defineConfig
+} from 'vite';
+import laravel
+    from 'laravel-vite-plugin';
+import html
+    from '@rollup/plugin-html';
+import {
+    glob
+} from 'glob';
 
 /**
  * Get Files from a directory
@@ -9,8 +15,9 @@ import { glob } from 'glob';
  * @returns array
  */
 function GetFilesArray(query) {
-  return glob.sync(query);
+    return glob.sync(query);
 }
+
 /**
  * Js Files
  */
@@ -38,38 +45,38 @@ const FontsScssFiles = GetFilesArray('resources/assets/vendor/fonts/**/!(_)*.scs
 
 // Processing Window Assignment for Libs like jKanban, pdfMake
 function libsWindowAssignment() {
-  return {
-    name: 'libsWindowAssignment',
+    return {
+        name: 'libsWindowAssignment',
 
-    transform(src, id) {
-      if (id.includes('jkanban.js')) {
-        return src.replace('this.jKanban', 'window.jKanban');
-      } else if (id.includes('vfs_fonts')) {
-        return src.replaceAll('this.pdfMake', 'window.pdfMake');
-      }
-    }
-  };
+        transform(src, id) {
+            if (id.includes('jkanban.js')) {
+                return src.replace('this.jKanban', 'window.jKanban');
+            } else if (id.includes('vfs_fonts')) {
+                return src.replaceAll('this.pdfMake', 'window.pdfMake');
+            }
+        }
+    };
 }
 
 export default defineConfig({
-  plugins: [
-    laravel({
-      input: [
-        'resources/css/app.css',
-        'resources/assets/css/demo.css',
-        'resources/js/app.js',
-        ...pageJsFiles,
-        ...vendorJsFiles,
-        ...LibsJsFiles,
-        'resources/js/laravel-user-management.js', // Processing Laravel User Management CRUD JS File
-        ...CoreScssFiles,
-        ...LibsScssFiles,
-        ...LibsCssFiles,
-        ...FontsScssFiles
-      ],
-      refresh: true
-    }),
-    html(),
-    libsWindowAssignment()
-  ]
+    plugins: [
+        laravel({
+            input: [
+                'resources/css/app.css',
+                'resources/assets/css/demo.css',
+                'resources/js/app.js',
+                ...pageJsFiles,
+                ...vendorJsFiles,
+                ...LibsJsFiles,
+                'resources/js/laravel-user-management.js', // Processing Laravel User Management CRUD JS File
+                ...CoreScssFiles,
+                ...LibsScssFiles,
+                ...LibsCssFiles,
+                ...FontsScssFiles
+            ],
+            refresh: true
+        }),
+        html(),
+        libsWindowAssignment()
+    ]
 });

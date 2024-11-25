@@ -1,7 +1,11 @@
-import Shepherd from 'shepherd.js/dist/js/shepherd';
+import Shepherd
+    from 'shepherd.js/dist/js/shepherd';
 
 try {
-  window.Shepherd = Shepherd;
-} catch (e) {}
+    window.Shepherd = Shepherd;
+} catch (e) {
+}
 
-export { Shepherd };
+export {
+    Shepherd
+};

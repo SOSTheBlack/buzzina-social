@@ -11,29 +11,30 @@
 @import 'mixins';
 
 @if $enable-light-style {
-  .light-style {
-    .pcr-app {
-      .pcr-interaction input:focus {
-        box-shadow: light.$box-shadow;
-      }
+    .light-style {
+        .pcr-app {
+            .pcr-interaction input:focus {
+                box-shadow: light.$box-shadow;
+            }
+        }
     }
-  }
 }
 
 // Dark style for pickr
 @if $enable-dark-style {
-  .dark-style {
-    .pcr-app {
-      background: dark.$card-bg !important;
+    .dark-style {
+        .pcr-app {
+            background: dark.$card-bg !important;
 
-      .pcr-type:not(.active),
-      .pcr-result {
-        background: dark.$body-bg !important;
-        color: dark.$white !important;
-      }
-      .pcr-interaction input:focus {
-        box-shadow: dark.$box-shadow;
-      }
+            .pcr-type:not(.active),
+            .pcr-result {
+                background: dark.$body-bg !important;
+                color: dark.$white !important;
+            }
+
+            .pcr-interaction input:focus {
+                box-shadow: dark.$box-shadow;
+            }
+        }
     }
-  }
 }

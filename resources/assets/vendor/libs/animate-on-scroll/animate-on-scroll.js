@@ -1,7 +1,11 @@
-import AOS from 'aos/dist/aos';
+import AOS
+    from 'aos/dist/aos';
 
 try {
-  window.AOS = AOS;
-} catch (e) {}
+    window.AOS = AOS;
+} catch (e) {
+}
 
-export { AOS };
+export {
+    AOS
+};

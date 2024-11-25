@@ -1,7 +1,11 @@
-import ClipboardJS from 'clipboard';
+import ClipboardJS
+    from 'clipboard';
 
 try {
-  window.ClipboardJS = ClipboardJS;
-} catch (e) {}
+    window.ClipboardJS = ClipboardJS;
+} catch (e) {
+}
 
-export { ClipboardJS };
+export {
+    ClipboardJS
+};

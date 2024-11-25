@@ -4,6 +4,6 @@
 
 'use strict';
 
-(function () {
-  window.print();
+(function() {
+    window.print();
 })();

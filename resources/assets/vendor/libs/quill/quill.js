@@ -1,7 +1,11 @@
-import Quill from 'quill/dist/quill';
+import Quill
+    from 'quill/dist/quill';
 
 try {
-  window.Quill = Quill;
-} catch (e) {}
+    window.Quill = Quill;
+} catch (e) {
+}
 
-export { Quill };
+export {
+    Quill
+};

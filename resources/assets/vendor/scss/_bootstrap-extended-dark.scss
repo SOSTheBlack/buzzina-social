@@ -35,6 +35,6 @@
 // LTR Utilities
 
 @include ltr-only {
-  @import '_bootstrap-extended/utilities-ltr';
-  @import 'bootstrap/scss/utilities/api';
+    @import '_bootstrap-extended/utilities-ltr';
+    @import 'bootstrap/scss/utilities/api';
 }

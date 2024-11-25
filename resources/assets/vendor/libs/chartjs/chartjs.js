@@ -1,7 +1,11 @@
-import Chart from 'chart.js/auto';
+import Chart
+    from 'chart.js/auto';
 
 try {
-  window.Chart = Chart;
-} catch (e) {}
+    window.Chart = Chart;
+} catch (e) {
+}
 
-export { Chart };
+export {
+    Chart
+};

@@ -1,11 +1,12 @@
 @mixin tagify-theme($color) {
-  .tagify--focus {
-    border-color: $color !important;
-    ~ label {
-      color: $color !important;
+    .tagify--focus {
+        border-color: $color !important;
+
+        ~ label {
+            color: $color !important;
+        }
     }
-  }
-  .tagify__dropdown__item--active {
-    background: $color !important;
-  }
+    .tagify__dropdown__item--active {
+        background: $color !important;
+    }
 }

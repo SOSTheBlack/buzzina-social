@@ -1,7 +1,11 @@
-import mapboxgl from 'mapbox-gl';
+import mapboxgl
+    from 'mapbox-gl';
 
 try {
-  window.mapboxgl = mapboxgl;
-} catch (e) {}
+    window.mapboxgl = mapboxgl;
+} catch (e) {
+}
 
-export { mapboxgl };
+export {
+    mapboxgl
+};

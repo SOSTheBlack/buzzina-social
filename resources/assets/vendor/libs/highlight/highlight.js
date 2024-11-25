@@ -1,7 +1,11 @@
-import hljs from 'highlight.js';
+import hljs
+    from 'highlight.js';
 
 try {
-  window.hljs = hljs;
-} catch (e) {}
+    window.hljs = hljs;
+} catch (e) {
+}
 
-export { hljs };
+export {
+    hljs
+};

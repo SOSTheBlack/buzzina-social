@@ -1,7 +1,11 @@
-import katex from 'katex/dist/katex';
+import katex
+    from 'katex/dist/katex';
 
 try {
-  window.katex = katex;
-} catch (e) {}
+    window.katex = katex;
+} catch (e) {
+}
 
-export { katex };
+export {
+    katex
+};

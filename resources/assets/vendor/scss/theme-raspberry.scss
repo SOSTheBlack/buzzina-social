@@ -7,11 +7,11 @@ $primary-color: #e30b5c;
 $body-bg: #f7f7f9;
 
 body {
-  background: $body-bg;
+    background: $body-bg;
 }
 
 .bg-body {
-  background: $body-bg !important;
+    background: $body-bg !important;
 }
 
 @include template-common-theme($primary-color);
@@ -24,37 +24,40 @@ body {
 @include template-navbar-style('.bg-navbar-theme', $card-bg, $color: $headings-color, $active-color: $headings-color);
 
 .layout-horizontal .layout-navbar {
-  box-shadow: 0 1px 0 $border-color;
+    box-shadow: 0 1px 0 $border-color;
 }
 
 .layout-navbar-fixed .layout-page:not(.window-scrolled) .layout-navbar.navbar-detached {
-  background: $body-bg;
+    background: $body-bg;
 }
 
 // Menu
 // ---------------------------------------------------------------------------
 
 @include template-menu-style(
-  '.bg-menu-theme',
-  $body-bg,
-  $color: $headings-color,
-  $active-color: $headings-color,
-  $border: transparent,
-  $active-bg: $primary-color
+        '.bg-menu-theme',
+        $body-bg,
+    $color: $headings-color,
+    $active-color: $headings-color,
+    $border: transparent,
+    $active-bg: $primary-color
 );
 @include media-breakpoint-up($menu-collapsed-layout-breakpoint) {
-  .layout-menu-collapsed.layout-menu-hover .bg-menu-theme {
-    box-shadow: $box-shadow-lg;
-  }
-}
-.bg-menu-theme {
-  &.menu-horizontal {
-    background-color: $card-bg !important;
-    .menu-inner .menu-item:not(.menu-item-closing) > .menu-sub {
-      background: $card-bg;
+    .layout-menu-collapsed.layout-menu-hover .bg-menu-theme {
+        box-shadow: $box-shadow-lg;
     }
-  }
 }
+
+.bg-menu-theme {
+    &.menu-horizontal {
+        background-color: $card-bg !important;
+
+        .menu-inner .menu-item:not(.menu-item-closing) > .menu-sub {
+            background: $card-bg;
+        }
+    }
+}
+
 // .bg-menu-theme {
 //   .menu-inner > .menu-item > .menu-link .menu-icon,
 //   .menu-inner > .menu-item > .menu-link:hover .menu-icon,
@@ -90,33 +93,34 @@ body {
 
 // card
 .card {
-  box-shadow: none;
-  border: $border-width solid $card-border-color;
+    box-shadow: none;
+    border: $border-width solid $card-border-color;
 }
 
 // Accordion
 .accordion {
-  .accordion-item {
-    border-top: $accordion-border-width solid $accordion-border-color;
-  }
+    .accordion-item {
+        border-top: $accordion-border-width solid $accordion-border-color;
+    }
 }
 
 // default form wizard style
 
 .bs-stepper:not(.wizard-modern) {
-  border: 1px solid $border-color;
-  border-radius: $card-border-radius;
-  .modal .modal-body & {
-    border-width: 0;
-  }
+    border: 1px solid $border-color;
+    border-radius: $card-border-radius;
+
+    .modal .modal-body & {
+        border-width: 0;
+    }
 }
 
 // modern form wizard style
 
 .bs-stepper.wizard-modern {
-  .bs-stepper-content {
-    box-shadow: none !important;
-    border: 1px solid $border-color;
-    border-radius: $card-border-radius;
-  }
+    .bs-stepper-content {
+        box-shadow: none !important;
+        border: 1px solid $border-color;
+        border-radius: $card-border-radius;
+    }
 }

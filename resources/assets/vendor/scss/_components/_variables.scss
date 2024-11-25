@@ -141,10 +141,10 @@ $avatar-bg: #f0eff0 !default; // (C)
 // Timeline
 // *******************************************************************************
 $timeline-line-border-styles: (
-  solid: solid,
-  dotted: dotted,
-  dashed: dashed,
-  hidden: none
+    solid: solid,
+    dotted: dotted,
+    dashed: dashed,
+    hidden: none
 ) !default;
 
 $timeline-border-color: $border-color !default;

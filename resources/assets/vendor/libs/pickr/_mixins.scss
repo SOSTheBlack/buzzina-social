@@ -2,10 +2,10 @@
 
 // Background & Primary color for picker
 @mixin colorPicker-theme($background) {
-  .pcr-app {
-    .pcr-type.active,
-    .pcr-save {
-      background: $background !important;
+    .pcr-app {
+        .pcr-type.active,
+        .pcr-save {
+            background: $background !important;
+        }
     }
-  }
 }

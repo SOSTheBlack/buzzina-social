@@ -2,9 +2,9 @@
 // *******************************************************************************
 
 .blockUI {
-  &.blockOverlay,
-  &.blockMsg {
-    z-index: $zindex-modal + 1 !important;
-    color: $white !important;
-  }
+    &.blockOverlay,
+    &.blockMsg {
+        z-index: $zindex-modal + 1 !important;
+        color: $white !important;
+    }
 }

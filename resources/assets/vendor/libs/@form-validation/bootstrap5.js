@@ -1,7 +1,12 @@
-import { Bootstrap5 } from '@form-validation/plugin-bootstrap5';
+import {
+    Bootstrap5
+} from '@form-validation/plugin-bootstrap5';
 
 try {
-  FormValidation.plugins.Bootstrap5 = Bootstrap5;
-} catch (e) {}
+    FormValidation.plugins.Bootstrap5 = Bootstrap5;
+} catch (e) {
+}
 
-export { Bootstrap5 };
+export {
+    Bootstrap5
+};

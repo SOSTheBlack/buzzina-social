@@ -6,11 +6,20 @@
 
 #### Requerimentos do sistema
 
-- Docker 4.*
+-
+Docker
+4.*
 
 ### Instalação
 
-Passos para instalar o BuzzinaSocial em seu sistema🧑‍💻
+Passos
+para
+instalar
+o
+BuzzinaSocial
+em
+seu
+sistema🧑‍💻
 
 ```shell
 cp .env.example .env

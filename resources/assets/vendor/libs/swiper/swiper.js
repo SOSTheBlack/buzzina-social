@@ -1,7 +1,11 @@
-import Swiper from 'swiper/bundle';
+import Swiper
+    from 'swiper/bundle';
 
 try {
-  window.Swiper = Swiper;
-} catch (e) {}
+    window.Swiper = Swiper;
+} catch (e) {
+}
 
-export { Swiper };
+export {
+    Swiper
+};

@@ -12,27 +12,41 @@ class LeaveTeamTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_users_can_leave_teams(): void
-    {
-        $user = User::factory()->withPersonalTeam()->create();
+    public function test_users_can_leave_teams(
+    ): void {
+        $user =
+            User::factory()
+                ->withPersonalTeam()
+                ->create();
 
-        $user->currentTeam->users()->attach(
-            $otherUser = User::factory()->create(), ['role' => 'admin']
-        );
+        $user->currentTeam->users()
+            ->attach(
+                $otherUser =
+                    User::factory()
+                        ->create(),
+                ['role' => 'admin'],
+            );
 
         $this->actingAs($otherUser);
 
-        Livewire::test(TeamMemberManager::class, ['team' => $user->currentTeam])
+        Livewire::test(TeamMemberManager::class,
+            ['team' => $user->currentTeam])
             ->call('leaveTeam');
 
-        $this->assertCount(0, $user->currentTeam->fresh()->users);
+        $this->assertCount(0,
+            $user->currentTeam->fresh()->users);
     }
 
-    public function test_team_owners_cant_leave_their_own_team(): void
-    {
-        $this->actingAs($user = User::factory()->withPersonalTeam()->create());
+    public function test_team_owners_cant_leave_their_own_team(
+    ): void {
+        $this->actingAs(
+            $user =
+                User::factory()
+                    ->withPersonalTeam()
+                    ->create());
 
-        Livewire::test(TeamMemberManager::class, ['team' => $user->currentTeam])
+        Livewire::test(TeamMemberManager::class,
+            ['team' => $user->currentTeam])
             ->call('leaveTeam')
             ->assertHasErrors(['team']);
 

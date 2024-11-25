@@ -1,7 +1,11 @@
-import autosize from 'autosize';
+import autosize
+    from 'autosize';
 
 try {
-  window.autosize = autosize;
-} catch (e) {}
+    window.autosize = autosize;
+} catch (e) {
+}
 
-export { autosize };
+export {
+    autosize
+};

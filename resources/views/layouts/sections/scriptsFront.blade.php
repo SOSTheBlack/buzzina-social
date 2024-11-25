@@ -1,4 +1,3 @@
-
 <!-- BEGIN: Vendor JS-->
 @vite([
   'resources/assets/vendor/js/dropdown-hover.js',

@@ -2,24 +2,25 @@
 // *******************************************************************************
 
 .form-range {
-  // Chrome specific
-  &::-webkit-slider-thumb {
-    box-shadow: $form-range-thumb-box-shadow;
-  }
-
-  // Mozilla specific
-  &::-moz-range-thumb {
-    box-shadow: $form-range-thumb-box-shadow;
-  }
-  &:disabled {
-    &::-webkit-slider-runnable-track {
-      opacity: 0.45;
-      background: $primary;
+    // Chrome specific
+    &::-webkit-slider-thumb {
+        box-shadow: $form-range-thumb-box-shadow;
     }
 
-    &::-moz-range-track {
-      opacity: 0.45;
-      background: $primary;
+    // Mozilla specific
+    &::-moz-range-thumb {
+        box-shadow: $form-range-thumb-box-shadow;
     }
-  }
+
+    &:disabled {
+        &::-webkit-slider-runnable-track {
+            opacity: 0.45;
+            background: $primary;
+        }
+
+        &::-moz-range-track {
+            opacity: 0.45;
+            background: $primary;
+        }
+    }
 }

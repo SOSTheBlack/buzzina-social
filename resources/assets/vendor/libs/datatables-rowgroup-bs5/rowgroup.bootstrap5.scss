@@ -6,20 +6,20 @@
 
 // Light style
 @if $enable-light-style {
-  .light-style {
-    tr.group,
-    tr.group:hover {
-      background-color: light.$gray-100 !important;
+    .light-style {
+        tr.group,
+        tr.group:hover {
+            background-color: light.$gray-100 !important;
+        }
     }
-  }
 }
 
 // Dark style
 @if $enable-dark-style {
-  .dark-style {
-    tr.group,
-    tr.group:hover {
-      background-color: dark.$gray-200 !important;
+    .dark-style {
+        tr.group,
+        tr.group:hover {
+            background-color: dark.$gray-200 !important;
+        }
     }
-  }
 }

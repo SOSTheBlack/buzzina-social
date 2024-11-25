@@ -4,11 +4,11 @@
 
 'use strict';
 
-(function () {
-  // Send invoice textarea
-  const invoiceMsg = document.querySelector('#invoice-message');
+(function() {
+    // Send invoice textarea
+    const invoiceMsg = document.querySelector('#invoice-message');
 
-  const trimMsg = invoiceMsg.textContent.replace(/^\s+|\s+$/gm, '');
+    const trimMsg = invoiceMsg.textContent.replace(/^\s+|\s+$/gm, '');
 
-  invoiceMsg.value = trimMsg;
+    invoiceMsg.value = trimMsg;
 })();

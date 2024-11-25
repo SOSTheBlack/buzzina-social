@@ -6,33 +6,34 @@
 
 html,
 body {
-  background: $white !important;
+    background: $white !important;
 }
 
 body > :not(.invoice-print) {
-  display: none !important;
+    display: none !important;
 }
 
 .invoice-print {
-  min-width: 768px !important;
-  font-size: 15px !important;
+    min-width: 768px !important;
+    font-size: 15px !important;
 
-  svg {
-    fill: $body-color !important;
-  }
+    svg {
+        fill: $body-color !important;
+    }
 }
 
 .invoice-print * {
-  color: $body-color !important;
-  .border-top {
-    border-top: 1px solid rgba($color: $black, $alpha: 0.5) !important;
-  }
+    color: $body-color !important;
+
+    .border-top {
+        border-top: 1px solid rgba($color: $black, $alpha: 0.5) !important;
+    }
 }
 
 @if $enable-dark-style {
-  .dark-style {
-    .invoice-print th {
-      color: $white !important;
+    .dark-style {
+        .invoice-print th {
+            color: $white !important;
+        }
     }
-  }
 }

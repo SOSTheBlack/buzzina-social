@@ -2,24 +2,24 @@
 
 'use strict';
 
-(function () {
-  // video
-  const videoPlayer = new Plyr('#plyr-video-player');
-  document.getElementsByClassName('plyr')[0].style.borderRadius = '10px';
-  document.getElementsByClassName('plyr__poster')[0].style.display = 'none';
+(function() {
+    // video
+    const videoPlayer = new Plyr('#plyr-video-player');
+    document.getElementsByClassName('plyr')[0].style.borderRadius = '10px';
+    document.getElementsByClassName('plyr__poster')[0].style.display = 'none';
 
-  // content sticky
+    // content sticky
 
-  const htmlElement = document.getElementsByTagName('html')[0];
-  const stick = document.querySelector('.stick-top');
+    const htmlElement = document.getElementsByTagName('html')[0];
+    const stick = document.querySelector('.stick-top');
 
-  function TopSticky() {
-    if (htmlElement.classList.contains('layout-navbar-fixed')) {
-      stick.classList.add('course-content-fixed');
-    } else {
-      stick.classList.remove('course-content-fixed');
+    function TopSticky() {
+        if (htmlElement.classList.contains('layout-navbar-fixed')) {
+            stick.classList.add('course-content-fixed');
+        } else {
+            stick.classList.remove('course-content-fixed');
+        }
     }
-  }
 
-  window.addEventListener('scroll', TopSticky);
+    window.addEventListener('scroll', TopSticky);
 })();

@@ -6,9 +6,9 @@
 @import 'jquery-datatables-checkboxes/css/dataTables.checkboxes';
 
 table.dataTable .dt-checkboxes-select-all .form-check-input {
-  &,
-  &:after {
-    height: 1.125rem;
-    width: 1.125rem;
-  }
+    &,
+    &:after {
+        height: 1.125rem;
+        width: 1.125rem;
+    }
 }

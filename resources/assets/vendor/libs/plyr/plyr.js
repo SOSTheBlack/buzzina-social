@@ -1,7 +1,11 @@
-import Plyr from 'plyr';
+import Plyr
+    from 'plyr';
 
 try {
-  window.Plyr = Plyr;
-} catch (e) {}
+    window.Plyr = Plyr;
+} catch (e) {
+}
 
-export { Plyr };
+export {
+    Plyr
+};

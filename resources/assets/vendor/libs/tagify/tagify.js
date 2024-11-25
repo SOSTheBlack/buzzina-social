@@ -1,7 +1,11 @@
-import Tagify from '@yaireo/tagify';
+import Tagify
+    from '@yaireo/tagify';
 
 try {
-  window.Tagify = Tagify;
-} catch (e) {}
+    window.Tagify = Tagify;
+} catch (e) {
+}
 
-export { Tagify };
+export {
+    Tagify
+};

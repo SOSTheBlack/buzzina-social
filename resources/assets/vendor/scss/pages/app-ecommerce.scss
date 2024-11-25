@@ -12,20 +12,20 @@ $dz-box-padding: 0rem !default;
 
 .app-ecommerce-category,
 .app-ecommerce {
-  .comment-editor {
-    .ql-editor {
-      min-height: 7rem;
-      border-top-left-radius: light.$border-radius;
-      border-top-right-radius: light.$border-radius;
+    .comment-editor {
+        .ql-editor {
+            min-height: 7rem;
+            border-top-left-radius: light.$border-radius;
+            border-top-right-radius: light.$border-radius;
+        }
     }
-  }
 }
 
 @include light.media-breakpoint-down(sm) {
-  .widget-separator {
-    .border-shift.border-end {
-      border-right: none !important;
-      border-left: none !important;
+    .widget-separator {
+        .border-shift.border-end {
+            border-right: none !important;
+            border-left: none !important;
+        }
     }
-  }
 }

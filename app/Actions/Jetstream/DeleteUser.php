@@ -11,16 +11,29 @@ use Laravel\Jetstream\Contracts\DeletesUsers;
 class DeleteUser implements DeletesUsers
 {
     /**
-     * Create a new action instance.
+     * Create
+     * a
+     * new
+     * action
+     * instance.
      */
-    public function __construct(protected DeletesTeams $deletesTeams) {}
+    public function __construct(
+        protected DeletesTeams $deletesTeams,
+    ) {}
 
     /**
-     * Delete the given user.
+     * Delete
+     * the
+     * given
+     * user.
      */
-    public function delete(User $user): void
-    {
-        DB::transaction(function () use ($user) {
+    public function delete(
+        User $user,
+    ): void {
+        DB::transaction(function (
+        ) use (
+            $user,
+        ) {
             $this->deleteTeams($user);
             $user->deleteProfilePhoto();
             $user->tokens->each->delete();
@@ -29,13 +42,26 @@ class DeleteUser implements DeletesUsers
     }
 
     /**
-     * Delete the teams and team associations attached to the user.
+     * Delete
+     * the
+     * teams
+     * and
+     * team
+     * associations
+     * attached
+     * to
+     * the
+     * user.
      */
-    protected function deleteTeams(User $user): void
-    {
-        $user->teams()->detach();
+    protected function deleteTeams(
+        User $user,
+    ): void {
+        $user->teams()
+            ->detach();
 
-        $user->ownedTeams->each(function (Team $team) {
+        $user->ownedTeams->each(function (
+            Team $team,
+        ) {
             $this->deletesTeams->delete($team);
         });
     }

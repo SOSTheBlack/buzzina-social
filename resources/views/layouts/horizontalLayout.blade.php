@@ -31,8 +31,10 @@
 @endphp
 
 @section('layoutContent')
-    <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
-        <div class="layout-container">
+    <div
+        class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
+        <div
+            class="layout-container">
 
             <!-- BEGIN: Navbar-->
             @if ($isNavbar)
@@ -42,13 +44,15 @@
 
 
             <!-- Layout page -->
-            <div class="layout-page">
+            <div
+                class="layout-page">
 
                 {{-- Below commented code read by artisan command while installing jetstream. !! Do not remove if you want to use jetstream. --}}
                 <x-banner />
 
                 <!-- Content wrapper -->
-                <div class="content-wrapper">
+                <div
+                    class="content-wrapper">
 
                     @if ($isMenu)
                         @include('layouts/sections/menu/horizontalMenu')
@@ -56,9 +60,11 @@
 
                     <!-- Content -->
                     @if ($isFlex)
-                        <div class="{{$container}} d-flex align-items-stretch flex-grow-1 p-0">
+                        <div
+                            class="{{$container}} d-flex align-items-stretch flex-grow-1 p-0">
                             @else
-                                <div class="{{$container}} flex-grow-1 container-p-y">
+                                <div
+                                    class="{{$container}} flex-grow-1 container-p-y">
                                     @endif
 
                                     @yield('content')
@@ -71,7 +77,8 @@
                                     @include('layouts/sections/footer/footer')
                                 @endif
                                 <!-- / Footer -->
-                                <div class="content-backdrop fade"></div>
+                                <div
+                                    class="content-backdrop fade"></div>
                         </div>
                         <!--/ Content wrapper -->
                 </div>
@@ -81,10 +88,12 @@
 
             @if ($isMenu)
                 <!-- Overlay -->
-                <div class="layout-overlay layout-menu-toggle"></div>
+                <div
+                    class="layout-overlay layout-menu-toggle"></div>
             @endif
             <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-            <div class="drag-target"></div>
+            <div
+                class="drag-target"></div>
         </div>
         <!-- / Layout wrapper -->
 @endsection

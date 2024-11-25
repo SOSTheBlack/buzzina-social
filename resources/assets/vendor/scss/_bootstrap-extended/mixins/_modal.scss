@@ -2,19 +2,20 @@
 // *******************************************************************************
 
 @mixin template-modal-onboarding-theme($background, $color) {
-  .modal-onboarding {
-    .carousel-indicators {
-      [data-bs-target] {
-        background-color: $background;
-      }
+    .modal-onboarding {
+        .carousel-indicators {
+            [data-bs-target] {
+                background-color: $background;
+            }
+        }
     }
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    color: $background;
-    &:hover,
-    &:focus {
-      color: $background;
+    .carousel-control-prev,
+    .carousel-control-next {
+        color: $background;
+
+        &:hover,
+        &:focus {
+            color: $background;
+        }
     }
-  }
 }

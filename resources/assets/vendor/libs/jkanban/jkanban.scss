@@ -5,24 +5,26 @@
 
 // Light layout
 @if $enable-light-style {
-  .light-style {
-    .kanban-board {
-      background: light.$border-color;
+    .light-style {
+        .kanban-board {
+            background: light.$border-color;
+        }
+
+        .kanban-item {
+            background: light.$card-bg;
+        }
     }
-    .kanban-item {
-      background: light.$card-bg;
-    }
-  }
 }
 
 // Dark layout
 @if $enable-dark-style {
-  .dark-style {
-    .kanban-board {
-      background: dark.$border-color;
+    .dark-style {
+        .kanban-board {
+            background: dark.$border-color;
+        }
+
+        .kanban-item {
+            background: dark.$card-bg;
+        }
     }
-    .kanban-item {
-      background: dark.$card-bg;
-    }
-  }
 }

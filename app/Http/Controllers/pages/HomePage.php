@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 
 class HomePage extends Controller
 {
-    public function index()
-    {
+    public function index(
+    ) {
         return view('content.pages.pages-home');
     }
 }

@@ -1,8 +1,12 @@
-import FormValidation from '@form-validation/bundle/popular'
+import FormValidation
+    from '@form-validation/bundle/popular';
 
 try {
-  window.FormValidation = FormValidation;
-} catch (e) {}
+    window.FormValidation = FormValidation;
+} catch (e) {
+}
 
-export { FormValidation };
+export {
+    FormValidation
+};
 

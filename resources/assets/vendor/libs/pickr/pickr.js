@@ -1,7 +1,11 @@
-import pickr from '@simonwep/pickr/dist/pickr.es5.min';
+import pickr
+    from '@simonwep/pickr/dist/pickr.es5.min';
 
 try {
-  window.pickr = pickr;
-} catch (e) {}
+    window.pickr = pickr;
+} catch (e) {
+}
 
-export { pickr };
+export {
+    pickr
+};

@@ -4,15 +4,15 @@ import 'bootstrap-daterangepicker/daterangepicker';
 
 const fnDaterangepicker = $.fn.daterangepicker;
 
-$.fn.daterangepicker = function (options, callback) {
-  fnDaterangepicker.call(this, options, callback);
+$.fn.daterangepicker = function(options, callback) {
+    fnDaterangepicker.call(this, options, callback);
 
-  if (options && (options.showWeekNumbers || options.showISOWeekNumbers)) {
-    this.each(function () {
-      const instance = $(this).data('daterangepicker');
-      if (instance && instance.container) instance.container.addClass('with-week-numbers');
-    });
-  }
+    if (options && (options.showWeekNumbers || options.showISOWeekNumbers)) {
+        this.each(function() {
+            const instance = $(this).data('daterangepicker');
+            if (instance && instance.container) instance.container.addClass('with-week-numbers');
+        });
+    }
 
-  return this;
+    return this;
 };
