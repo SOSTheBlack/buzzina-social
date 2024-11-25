@@ -47,7 +47,7 @@
                         <div class="form-floating form-floating-outline mb-5">
                             <input type="text" class="form-control @error('name') is-invalid @enderror" id="username"
                                    name="name" placeholder="johndoe" autofocus value="{{ old('name') }}">
-                            <label for="username">Usuário</label>
+                            <label for="username">Nome completo</label>
                             @error('name')
                             <span class="invalid-feedback" role="alert">
                 <span class="fw-medium">{{ $message }}</span>

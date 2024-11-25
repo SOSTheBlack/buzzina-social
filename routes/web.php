@@ -6,7 +6,7 @@ use App\Http\Controllers\pages\HomePage;
 use App\Http\Controllers\pages\MiscError;
 
 Route::name('site.')->group(function () {
-  Route::get('/', fn() => response()->json(['site' => 'home']))->name('home');
+  Route::view('/', 'content.pages.pages-misc-comingsoon')->name('home');
 });
 
 Route::prefix('dashboard')->name('dashboard.')->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
