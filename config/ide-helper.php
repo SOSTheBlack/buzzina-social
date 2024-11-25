@@ -122,9 +122,9 @@ return [
     'include_helpers' => true,
 
     'helper_files' => [
-        base_path() . '/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
-        base_path() . '/app/Helpers/MaterializeTemplate.php',
-        base_path() . '/app/Helpers/helpers.php',
+        base_path().'/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
+        base_path().'/app/Helpers/MaterializeTemplate.php',
+        base_path().'/app/Helpers/helpers.php',
     ],
 
     /*
