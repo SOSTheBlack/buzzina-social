@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Models\Enums\RaffleCategoryStatusEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -10,6 +11,7 @@ class RaffleCategory extends Model
 {
     /** @use HasFactory<\Database\Factories\RaffleCategoryFactory> */
     use HasFactory;
+    use SoftDeletes;
 
     /**
      * {@inheritdoc}

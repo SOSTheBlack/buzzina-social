@@ -34,4 +34,7 @@ enum StatusEnum: string
 
     case Visited = 'visited';
 
+    case Paused = 'paused';
+
+    case Finished = 'finished';
 }
