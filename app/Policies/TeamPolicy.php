@@ -20,9 +20,8 @@ class TeamPolicy
      * any
      * models.
      */
-    public function viewAny(
-        User $user,
-    ): bool {
+    public function viewAny(User $user): bool
+    {
         return true;
     }
 
@@ -36,10 +35,8 @@ class TeamPolicy
      * the
      * model.
      */
-    public function view(
-        User $user,
-        Team $team,
-    ): bool {
+    public function view(User $user, Team $team): bool
+    {
         return $user->belongsToTeam($team);
     }
 
@@ -52,9 +49,8 @@ class TeamPolicy
      * create
      * models.
      */
-    public function create(
-        User $user,
-    ): bool {
+    public function create(User $user): bool
+    {
         return true;
     }
 
@@ -68,10 +64,8 @@ class TeamPolicy
      * the
      * model.
      */
-    public function update(
-        User $user,
-        Team $team,
-    ): bool {
+    public function update(User $user, Team $team): bool
+    {
         return $user->ownsTeam($team);
     }
 
@@ -85,10 +79,8 @@ class TeamPolicy
      * team
      * members.
      */
-    public function addTeamMember(
-        User $user,
-        Team $team,
-    ): bool {
+    public function addTeamMember(User $user, Team $team): bool
+    {
         return $user->ownsTeam($team);
     }
 
@@ -103,10 +95,8 @@ class TeamPolicy
      * member
      * permissions.
      */
-    public function updateTeamMember(
-        User $user,
-        Team $team,
-    ): bool {
+    public function updateTeamMember(User $user, Team $team): bool
+    {
         return $user->ownsTeam($team);
     }
 
@@ -120,10 +110,8 @@ class TeamPolicy
      * team
      * members.
      */
-    public function removeTeamMember(
-        User $user,
-        Team $team,
-    ): bool {
+    public function removeTeamMember(User $user, Team $team): bool
+    {
         return $user->ownsTeam($team);
     }
 
@@ -137,10 +125,8 @@ class TeamPolicy
      * the
      * model.
      */
-    public function delete(
-        User $user,
-        Team $team,
-    ): bool {
+    public function delete(User $user, Team $team): bool
+    {
         return $user->ownsTeam($team);
     }
 }
