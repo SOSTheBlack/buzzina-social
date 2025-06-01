@@ -6,49 +6,38 @@
 
 #### Requerimentos do sistema
 
--
-Docker
-4.*
+- Docker 4.*
 
 ### Instalação
 
-Passos
-para
-instalar
-o
-BuzzinaSocial
-em
-seu
-sistema🧑‍💻
+Passos para instalar o BuzzinaSocial em seu sistema🧑‍💻
 
 ```shell
 cp .env.example .env
-
-
 docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v "$(pwd):/var/www/html" \
     -w /var/www/html \
     laravelsail/php84-composer:latest \
     composer install --ignore-platform-reqs
-
-#Criar alias
-alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
-
-
-docker compose down -v
- 
-sail build --no-cache
- 
-sail up --no-cache
-
-sail artisan key:generate
-
-sail yarn
-
-
 ```
 
+```shell
+vendor/bin/sail build --no-cache
+vendor/bin/sail up --build
+```
 
+```shell
+vendor/bin/sail artisan key:generate
+vendor/bin/sail artisan migrate --seed
+vendor/bin/sail artisan storage:link
+```
 
+```shell
+vendor/bin/sail yarn
+vendor/bin/sail yarn dev
+```
 
+```shell
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+```
